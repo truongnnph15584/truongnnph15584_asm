@@ -1,0 +1,334 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "product_name": "Yasuo mains Essential T-Shirt 01751",
+      "price": "250000.00",
+      "img": "image_1.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\nSlim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\nMale model shown is 6'0\" / 183 cm tall and wearing size Large?\nFemale model shown is 5'8\" / 173 cm tall and wearing size Small?\nMidweight 4.2 oz. / 145 gsm fabric, solid color t-shirts are 100% cotton, heather grey t-shirts are 90% cotton/10% polyester charcoal heather t-shirts are 52% cotton/48% polyester ?",
+      "sale": "10",
+      "view": "1",
+      "categoryProductId": "2"
+    },
+    {
+      "id": "2",
+      "product_name": "Teemo Hat ",
+      "price": "200000.00",
+      "img": "image_2.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\nSlim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\nMale model shown is 6'0\" / 183 cm tall and wearing size Large?\r\nFemale model shown is 5'8\" / 173 cm tall and wearing size Small?\r\nMidweight 4.2 oz. / 145 gsm fabric, solid color t-shirts are 100% cotton, heather grey t-shirts are 90% cotton/10% polyester charcoal heather t-shirts are 52% cotton/48% polyester ?",
+      "sale": "10",
+      "view": "1",
+      "categoryProductId": 3
+    },
+    {
+      "id": "3",
+      "product_name": "Riot Game Cart",
+      "price": "150000.00",
+      "img": "image_3.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\nSlim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\nMale model shown is 6'0\" / 183 cm tall and wearing size Large?\r\nFemale model shown is 5'8\" / 173 cm tall and wearing size Small?\r\nMidweight 4.2 oz. / 145 gsm fabric, solid color t-shirts are 100% cotton, heather grey t-shirts are 90% cotton/10% polyester charcoal heather t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 4
+    },
+    {
+      "id": "4",
+      "product_name": "Lee Sin mains Essential T-Shirt",
+      "price": "1500000.00",
+      "img": "image_4.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\nSlim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\nMale model shown is 6'0\" / 183 cm tall and wearing size Large?\r\nFemale model shown is 5'8\" / 173 cm tall and wearing size Small?\r\nMidweight 4.2 oz. / 145 gsm fabric, solid color t-shirts are 100% cotton, heather grey t-shirts are 90% cotton/10% polyester charcoal heather t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "5",
+      "product_name": "Akalis mains Essential T-Shirt",
+      "price": "150000.00",
+      "img": "image_5.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\nSlim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\nMale model shown is 6'0\" / 183 cm tall and wearing size Large?\r\nFemale model shown is 5'8\" / 173 cm tall and wearing size Small?\r\nMidweight 4.2 oz. / 145 gsm fabric, solid color t-shirts are 100% cotton, heather grey t-shirts are 90% cotton/10% polyester charcoal heather t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "7",
+      "product_name": "Yasuo T-Shirt",
+      "price": "100000.00",
+      "img": "image_6.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "10",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "8",
+      "product_name": "ROBOTIC T-Shirt",
+      "price": "100000.00",
+      "img": "image_7.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "9",
+      "product_name": "Lucian T-Shirt",
+      "price": "200000.00",
+      "img": "image_8.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "10",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "10",
+      "product_name": "yasuo T-Shirt v2",
+      "price": "300000.00",
+      "img": "image_9.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "11",
+      "product_name": "PS T-Shirt",
+      "price": "200000.00",
+      "img": "image_10.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "12",
+      "product_name": "God of War T-Shirt",
+      "price": "100000.00",
+      "img": "image_11.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "13",
+      "product_name": "God of war Hoodie",
+      "price": "200000.00",
+      "img": "image_12.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "14",
+      "product_name": "God of war sweater",
+      "price": "100000.00",
+      "img": "image_13.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "15",
+      "product_name": "God of war T-Shirt v2",
+      "price": "300000.00",
+      "img": "image_14.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "16",
+      "product_name": "Zed T-Shirt",
+      "price": "250000.00",
+      "img": "image_15.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "17",
+      "product_name": "Nirvana T-Shirt",
+      "price": "300000.00",
+      "img": "image_16.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "18",
+      "product_name": "God of war T-Shirt v3",
+      "price": "200000.00",
+      "img": "image_17.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "10",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "19",
+      "product_name": "Dark souls T-Shirt",
+      "price": "250000.00",
+      "img": "image_18.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "20",
+      "product_name": "Dark souls T-Shirt v2",
+      "price": "300000.00",
+      "img": "image_19.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "21",
+      "product_name": "Dark souls T-Shirt v3",
+      "price": "100000.00",
+      "img": "image_20.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "22",
+      "product_name": "Dark souls T-Shirt v4",
+      "price": "200000.00",
+      "img": "image_21.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 2
+    },
+    {
+      "id": "23",
+      "product_name": "Good game short1",
+      "price": "100000.00",
+      "img": "image_22.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "10",
+      "view": "1",
+      "categoryProductId": 1
+    },
+    {
+      "id": "24",
+      "product_name": "Squid game short ",
+      "price": "250000.00",
+      "img": "image_23.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "20",
+      "view": "1",
+      "categoryProductId": 1
+    },
+    {
+      "id": "26",
+      "product_name": "Good game short v2",
+      "price": "250000.00",
+      "img": "image_25.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 1
+    },
+    {
+      "id": "28",
+      "product_name": "Halo T-Shirt v2",
+      "price": "300000.00",
+      "img": "image_26.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 1
+    },
+    {
+      "id": "29",
+      "product_name": "Good game T-shirt",
+      "price": "250000.00",
+      "img": "image_27.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 1
+    },
+    {
+      "id": "30",
+      "product_name": "Alert-ego T-Shirt",
+      "price": "300000.00",
+      "img": "image_28.jfif",
+      "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+      "sale": "0",
+      "view": "1",
+      "categoryProductId": 1
+    }
+  ],
+  "categoryProducts": [
+    {
+      "id": 1,
+      "cate_name": "Quần"
+    },
+    {
+      "id": 2,
+      "cate_name": "Áo"
+    },
+    {
+      "id": 3,
+      "cate_name": "Mũ"
+    },
+    {
+      "id": 4,
+      "cate_name": "Thẻ Bài"
+    }
+  ],
+  "users": [
+    {
+      "email": "truong@gmail.com",
+      "password": "$2a$10$8V.ic0bpNC91Y0Gublcr2O/nIS5n3C66mYJmJZllIsqS8yRom4itG",
+      "full_name": "nhattruong",
+      "name": "truong",
+      "role": 0,
+      "avt": "avt_1.jpg",
+      "age": "20",
+      "id": 1
+    },
+    {
+      "email": "abc@gmail.com",
+      "password": "$2a$10$lrPkG9NTU5W4v9FoQlWXy.Iigvy/IUQc7zZ6Zt9qgow8CWO9y/DmK",
+      "full_name": "abc",
+      "name": "abc",
+      "role": 1,
+      "avt": "df_avt.png",
+      "age": "20",
+      "id": 2
+    },
+    {
+      "email": "qwer@gmail.com",
+      "password": "$2a$10$e07tDGugVMmdfVLc9J0YROYSXbAUTOoe9RTmAmuSzj.uoeYaa24eW",
+      "full_name": "qwer",
+      "name": "qwer",
+      "role": 1,
+      "avt": "df_avt.png",
+      "age": "20",
+      "id": 3
+    },
+    {
+      "email": "1234@gmail.com",
+      "password": "$2a$10$EUN42.YGUBaoROt9KPNRx.H2G9bPWQXzKgJyn1lHahxeo9MEtTWHO",
+      "full_name": "123",
+      "name": "123",
+      "role": 1,
+      "avt": "df_avt.png",
+      "age": "20",
+      "id": 4
+    }
+  ]
+}
