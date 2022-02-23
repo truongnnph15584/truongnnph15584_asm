@@ -11,7 +11,7 @@ const Header = {
         ${Nav.render()}
         </div>
         </div>
-         ${check_login.render()}
+        ${check_login.render()}  
         <div class="overflow-hidden h-96">
         <img class="w-full " src="../../../src/image/bg_banner.jpg" alt="">
           </div>

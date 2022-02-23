@@ -1,11 +1,12 @@
 // import axios from "axios";
 import { getall_products } from "../api/products";
+import { get_product } from "../api/products";
 import { add_to_cart } from "../utils/cart";
 const home = {
-    async render() {
-        let products = await getall_products();
-        const new_product = products.data.reverse().slice(0, 4)
-        return /* html */`
+  async render() {
+    let products = await getall_products();
+    const new_product = products.data.reverse().slice(0, 4)
+    return /* html */`
         <div class="home bg-slate-800 w-full h-auto">
         <div class="shop bg-slate-800 w-full h-auto px-44 py-16">
         <div class="title text-slate-200">
@@ -30,7 +31,7 @@ const home = {
           </div>
         </div>
       </div>`
-        ).join("")}
+    ).join("")}
         </div>
       </div>
       <div class="sub_banner py-44">
@@ -38,14 +39,17 @@ const home = {
     </div>
         </div>
         `;
-    },
-    afterRender() {
-      const add_cart = document.querySelectorAll('.bt > .add_cart');
-      add_cart.forEach(btn => {
-        const id = btn.dataset.id;
-        btn.addEventListener('click', async function(){
-          add_to_cart(id)
-        })
+  },
+  afterRender() {
+    const add_cart = document.querySelectorAll('.bt > .add_cart');
+    add_cart.forEach(btn => {
+      const id = btn.dataset.id;
+      btn.addEventListener('click', async function () {
+
+        let { data } = await get_product(id);
+        data['quantity'] = 1;
+        add_to_cart(data)
+      })
     });
 
   }
