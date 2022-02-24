@@ -321,7 +321,102 @@
       "id": 4
     }
   ],
-  "order":[
-    
+  "orders": [
+    {
+      "username": "nhattruong",
+      "phone": "dqdqdq",
+      "address": "dqdq",
+      "list_product": [
+        {
+          "id": "26",
+          "product_name": "Good game short v2",
+          "price": "250000.00",
+          "img": "image_25.jfif",
+          "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+          "sale": "0",
+          "view": "1",
+          "categoryProductId": 1,
+          "quantity": 3
+        },
+        {
+          "id": "29",
+          "product_name": "Good game T-shirt",
+          "price": "250000.00",
+          "img": "image_27.jfif",
+          "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+          "sale": "0",
+          "view": "1",
+          "categoryProductId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": 1030000,
+      "status": 0,
+      "id": 1
+    },
+    {
+      "username": "nhattruong",
+      "phone": "dqd",
+      "address": "dq",
+      "list_product": [
+        {
+          "id": "26",
+          "product_name": "Good game short v2",
+          "price": "250000.00",
+          "img": "image_25.jfif",
+          "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+          "sale": "0",
+          "view": "1",
+          "categoryProductId": 1,
+          "quantity": 3
+        },
+        {
+          "id": "29",
+          "product_name": "Good game T-shirt",
+          "price": "250000.00",
+          "img": "image_27.jfif",
+          "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+          "sale": "0",
+          "view": "1",
+          "categoryProductId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": 1030000,
+      "status": 0,
+      "id": 2
+    },
+    {
+      "username": "nhattruong",
+      "phone": "qdqd",
+      "address": "dqdqd",
+      "list_product": [
+        {
+          "id": "26",
+          "product_name": "Good game short v2",
+          "price": "250000.00",
+          "img": "image_25.jfif",
+          "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+          "sale": "0",
+          "view": "1",
+          "categoryProductId": 1,
+          "quantity": 3
+        },
+        {
+          "id": "29",
+          "product_name": "Good game T-shirt",
+          "price": "250000.00",
+          "img": "image_27.jfif",
+          "description": "Just your everyday smooth, comfy tee, a wardrobe staple?\r\n      Slim fit, so size up if you prefer a looser fit, or check out the Classic T-Shirt\r\n      Male model shown is 60 /183 cm tall and wearing size Large?Female model shown is 58 /\r\n       173 cm tall and wearing size Small?Midweight 4.2 oz. /\r\n        145 gsm fabric, solid color t-shirts are 100% cotton,\r\n         heather grey t-shirts are 90% cotton/10% polyester charcoal heather\r\n          t-shirts are 52% cotton/48% polyester ?",
+          "sale": "0",
+          "view": "1",
+          "categoryProductId": 1,
+          "quantity": 1
+        }
+      ],
+      "total": 1030000,
+      "status": 0,
+      "id": 3
+    }
   ]
 }

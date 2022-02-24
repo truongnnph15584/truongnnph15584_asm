@@ -1,44 +1,55 @@
 // import axios from "axios";
-
+import { new_order } from "../api/order";
 const Checkout = {
     async render() {
-
         let list_cart = JSON.parse(localStorage.getItem('cart'));
+        let user = JSON.parse(localStorage.getItem('user'));
         return /* html */`
 
         <body>
         <div class="model">
             <div class="room">
                 <div class="text-cover">
-                    <h1></h1>
+                    <h1>Order by ${user.full_name}</h1>
                 </div>
             </div>
             <div class="payment">
                 <div class="receipt-box">
                     <h3>Reciept Summary</h3>
                     <table class="table">
+                    ${list_cart.map((item) => /* html */`
+                      <tr>
+                                <td><span>${item.product_name}</span> x <span class="quantity" >${item.quantity}</span> <span  class="price">${item.price}</span> </td> 
+                                <td class="total"></td>
+                            </tr>
+                       `
+        ).join("")}
 
                         <tr>
                             <td>Subtotal</td>
-                            <td>VND</td>
+                            <td id="subtotal"></td>
                         </tr>
+                        <tr>
+                        <td>Shipping</td>
+                        <td>30.000 ₫</td>
+                    </tr>
                         <tfoot>
                             <tr>
                                 <td>Total</td>
-                                <td>VND</td>
+                                <td id="total"></td>
                             </tr>
                         </tfoot>
                     </table>
                 </div>
                 <div class="payment-info">
                     <h3>Payment Info</h3>
-                    <form action="<?= BASE_URL ?>orders" method="POST">
+                    <form >
                         <label>Enter Your Phone Number</label>
-                        <input type="text" name="phone" autocomplete="off" value="" placeholder="Phone">
+                        <input id="phone" type="text" name="phone" autocomplete="off" value="" placeholder="Phone">
                         <label>Enter Your Address</label>
-                        <input type="text" name="address" autocomplete="off" value="" placeholder="Address">
+                        <input id="address" type="text" name="address" autocomplete="off" value="" placeholder="Address">
                         <br><br>
-                        <input class="btn" type="submit" value="Book Securly">
+                        <input id="formcheckout" class="btn" type="button" value="Book Securly">
                     </form>
                 </div>
             </div>
@@ -189,8 +200,57 @@ const Checkout = {
     `;
     },
     afterRender() {
+        let list_cart = JSON.parse(localStorage.getItem('cart'));
+        let user = JSON.parse(localStorage.getItem('user'));
+        const prices = document.getElementsByClassName("price")
+        const quantity = document.getElementsByClassName("quantity")
+        const total = document.getElementsByClassName("total")
+        var convert_total = [];
+        const subtotal = document.getElementById("subtotal")
+        const totalall = document.getElementById("total")
+        const phone = document.getElementById("phone")
+        const address = document.getElementById("address")
+        const form = document.getElementById("formcheckout")
 
+        const order_total = {};
+        const list_product = []
+
+        console.log(list_cart)
+        // list_cart.map((item) =>
+        //     console.log(item)
+        // ).join("")
+
+        var sum = 0;
+        console.log(subtotal)
+        for (var i = 0; i <= total.length - 1; i++) {
+            total[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(Number(prices[i].innerHTML) * Number(quantity[i].innerHTML));
+            prices[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(parseInt(prices[i].innerHTML));
+            convert_total[i] = total[i].innerHTML.replace("&nbsp;₫", "");
+            convert_total[i] = convert_total[i].replace(".", "");
+
+            sum = sum + Number(convert_total[i])
+        }
+        subtotal.innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum);
+        totalall.innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum + 30000);
+
+        form.addEventListener('click', function () {
+            if (phone.value.length == 0 || address.value.length == 0) {
+                alert("You need to enter information!")
+            }
+            else {
+                order_total['username'] = user.full_name;
+                order_total['phone'] = phone.value;
+                order_total['address'] = address.value;
+                order_total['list_product'] = list_cart;
+                order_total['total'] = sum + 30000
+                order_total['status'] = 0;
+               new_order(order_total)
+               alert("Checkout Complete")
+               window.location.href = "/cart"
+            }
+        })
     }
+
 }
 
 
