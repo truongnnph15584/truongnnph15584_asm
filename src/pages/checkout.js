@@ -1,86 +1,209 @@
 // import axios from "axios";
 
-import { get_product } from "../api/products";
-import { remove_Item_cart, increaseQuantity, prveQuantity } from "../utils/cart";
-const Cart = {
-  async render() {
+const Checkout = {
+    async render() {
 
-    let list_cart = JSON.parse(localStorage.getItem('cart'));
-    return /* html */`
-    <div class="container">
-    <div class="card">
-        <div class="payment-details">
-            <h3>Payment Details</h3>
-            <p>Complete your purchase by providing your payment details.</p>
-        </div>
-        <div class="input-text"> <input type="text" placeholder="luke@skywalker.com"> <span>Email</span> </div>
-        <div class="input-text"> <input type="text" placeholder="0000 0000 0000 0000" data-slots="0" data-accept="\d"> <span>Card Details</span> </div>
-        <div class="input-text-cvv"> <input type="text" placeholder="mm/yyyy" data-slots="my">
-            <!--<span>Card Details</span>-->
-        </div>
-        <div class="input-text-cvv cvv"> <input type="text" placeholder="000" data-slots="0" data-accept="\d" size="3">
-            <!--<span>Card Details</span>-->
-        </div>
-        <div class="input-text"> <input type="text" placeholder="Username"> <span>Card Holder name</span> </div>
-        <div class="billing"> <span>Billing Address</span> <select>
-                <option>Select Country</option>
-                <option>United States</option>
-                <option>India</option>
-                <option>England</option>
-                <option>France</option>
-                <option>Germany</option>
-                <option>Japan</option>
-                <option>China</option>
-                <option>Italy</option>
-                <option>Russia</option>
-            </select>
-            <div class="zip-state">
-                <div class="zip"> <input type="text" placeholder="ZIP"> </div>
-                <div class="state"> <select>
-                        <option>Select State</option>
-                        <option>New York</option>
-                        <option>New Delhi</option>
-                        <option>London</option>
-                        <option>Paris</option>
-                        <option>Berlin</option>
-                        <option>Tokyo</option>
-                        <option>Bejing</option>
-                        <option>Rome</option>
-                        <option>Mosco</option>
-                    </select> </div>
+        let list_cart = JSON.parse(localStorage.getItem('cart'));
+        return /* html */`
+
+        <body>
+        <div class="model">
+            <div class="room">
+                <div class="text-cover">
+                    <h1><?= $_SESSION['user']['full_name'] ?></h1>
+                </div>
+            </div>
+            <div class="payment">
+                <div class="receipt-box">
+                    <h3>Reciept Summary</h3>
+                    <table class="table">
+
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>VND</td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <td>Total</td>
+                                <td>VND</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="payment-info">
+                    <h3>Payment Info</h3>
+                    <form action="<?= BASE_URL ?>orders" method="POST">
+                        <label>Enter Your Phone Number</label>
+                        <input type="text" name="phone" autocomplete="off" value="" placeholder="Phone">
+                        <label>Enter Your Address</label>
+                        <input type="text" name="address" autocomplete="off" value="" placeholder="Address">
+                        <br><br>
+                        <input class="btn" type="submit" value="Book Securly">
+                    </form>
+                </div>
             </div>
         </div>
-        <div class="input-text"> <input type="text" placeholder="GB0124589"> <span>Vat Number</span> </div>
-        <div class="input-text"> <input type="text" placeholder="BLACKWEDNESDAY"> <span>Discount code</span> </div>
-        <div class="summary">
-            <div class="text-data">
-                <p>Subtotal</p>
-                <p>Discount</p>
-                <p>VAT(20%)</p>
-                <h5>Total</h5>
-            </div>
-            <div class="numerical-data">
-                <p>$19.00</p>
-                <p>$5.00</p>
-                <p>$2.80</p>
-                <h5>$16.80</h5>
-            </div>
-        </div>
-        <div class="pay"> <button>Pay</button> </div>
-        <div class="secure"> <i class="fa fa-lock"></i>
-            <p> Payments are secured and encrypted</p>
-        </div>
-        <div class="last">
-            <p>Powered by Orman Clark</p> <a href="#"> Terms </a> <a href="#"> Privacy </a>
-        </div>
-    </div>
-</div>
+    </body>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            /*   border: 1px solid black; */
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+
+            position: relative;
+            min-height: 100vh;
+            background-image: url(http://localhost/php2/truongnnph15584_asm/public/upload/img/background-lg_rg.jpg);
+        }
+    
+        label {
+            display: block;
+        }
+    
+        /* Model Container */
+    
+        .model {
+            width: 900px;
+            height: 700px;
+            background: white;
+            /*   font-size: 0; */
+            position: absolute;
+            left:20%;
+            
+            color: white;
+            /*   animation: slideInFromLeft 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+            animation-fill-mode: forwards;
+        }
+    
+        .model:after {
+            width: 30px;
+            content: 'X';
+            height: 30px;
+            color: black;
+            position: absolute;
+            text-align: center;
+            padding-top: 3px;
+            top: 0;
+            right: -30px;
+            background-color: #bdc3c7;
+        }
+    
+        .room {
+            width: 40%;
+            height: 100%;
+            background: url(http://localhost/php2/truongnnph15584_asm/public/upload/img/register-left.jpg) no-repeat center center;
+            background-size: cover;
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+        }
+    
+        .text-cover {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px
+        }
+    
+        .text-cover>* {
+            margin: 10px 0;
+        }
+    
+        .text-cover h1 {
+            font-size: 1.8rem;
+        }
+    
+        .text-cover .price {
+            color: #e67e22;
+        }
+    
+        .text-cover .price span {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+    
+        .payment {
+            width: 60%;
+            height: 100%;
+            color: #34495e;
+            position: absolute;
+            top: 0%;
+            right: 0%;
+        }
+    
+        .receipt-box {
+            padding: 20px 20px;
+            border-bottom: 1px solid #34495e;
+        }
+    
+        .receipt-box h3,
+        .payment-info h3 {
+            margin-bottom: 2rem;
+        }
+    
+        .payment-info {
+            padding: 20px;
+        }
+        .payment-info input{
+            outline: none;
+        }
+    
+    
+        input[type=text] {
+            width: 100%;
+            padding: 8px 10px 10px;
+            margin: 15px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+    
+        .btn {
+            padding: 15px 25px;
+            border: none;
+            color: white;
+            width: 100%;
+            display: block;
+            background: #9b59b6;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+    
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            background-color: transparent;
+        }
+    
+        .table td {
+            font-size: 0.8rem;
+            font-style: italic;
+            padding: .25rem;
+            vertical-align: top;
+    
+        }
+    
+    
+        .table td:nth-child(2) {
+            text-align: right;
+        }
+    </style>
     `;
-  },
-  afterRender() {
+    },
+    afterRender() {
 
-  }
+    }
 }
 
 
-export default Cart
+export default Checkout

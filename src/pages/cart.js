@@ -76,9 +76,9 @@ const Cart = {
               <p>Subtotal</p>
               <p id="subtotal" >0</p>
             </div>
-            <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+           <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
             <div class="mt-6">
-              <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</a>
+              <a href="/checkout" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700">Checkout</a>
             </div>
             <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
               <p>
@@ -100,19 +100,19 @@ const Cart = {
     const subtotal = document.getElementById("subtotal")
     var sum = 0;
 
-   
+
 
     for (var i = 0; i <= total.length - 1; i++) {
       total[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(Number(prices[i].innerHTML) * Number(quantity[i].value));
       prices[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(parseInt(prices[i].innerHTML));
       convert_total[i] = total[i].innerHTML.replace("&nbsp;₫", "");
-      convert_total[i] = convert_total[i].replace(".","");
-       
-     sum = sum + Number(convert_total[i])
+      convert_total[i] = convert_total[i].replace(".", "");
+
+      sum = sum + Number(convert_total[i])
     }
     subtotal.innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum);
-  
-  
+
+
     delete_item.forEach(btn => {
       const id = btn.dataset.id;
       btn.addEventListener('click', function () {

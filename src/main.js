@@ -7,6 +7,7 @@ import games from "./pages/products";
 import product_detail from "./pages/product_detail";
 import home from "./pages/home";
 import Cart from "./pages/cart";
+import Checkout from "./pages/checkout";
 import dashboard from "./pages/admin/dashboard";
 import AdminProducts from "./pages/admin/products";
 import EditProducts from "./pages/admin/products/edit";
@@ -55,7 +56,7 @@ router.on({
     print(Cart)
   },
   "/checkout":() => {
-    print(Cart)
+    print(Checkout)
   },
   "/products/:id":({data}) => {
     const {id} = data;
