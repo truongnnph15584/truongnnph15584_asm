@@ -23,6 +23,7 @@ const Header = {
     if (checklogout.length > 0) {
       $("#logout").addEventListener('click', function (e) {
         localStorage.removeItem('user');
+        localStorage.removeItem('cart')
         window.location.href = "/login"
       })
     }
