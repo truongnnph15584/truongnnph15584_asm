@@ -10,7 +10,7 @@ const Checkout = {
         <div class="model">
             <div class="room">
                 <div class="text-cover">
-                    <h1><?= $_SESSION['user']['full_name'] ?></h1>
+                    <h1></h1>
                 </div>
             </div>
             <div class="payment">
@@ -80,19 +80,7 @@ const Checkout = {
             /*   animation: slideInFromLeft 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); */
             animation-fill-mode: forwards;
         }
-    
-        .model:after {
-            width: 30px;
-            content: 'X';
-            height: 30px;
-            color: black;
-            position: absolute;
-            text-align: center;
-            padding-top: 3px;
-            top: 0;
-            right: -30px;
-            background-color: #bdc3c7;
-        }
+
     
         .room {
             width: 40%;
