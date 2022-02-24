@@ -18,7 +18,7 @@ export const check_login = {
       <div class="dropdown-content">
         ${admin_html}
           <a href="/cart">Cart <i class="fas fa-shopping-cart"></i></a>
-          <span>My order <i class="fas fa-shopping-cart"></i></span>
+          <a href="/my_order">My order <i class="fas fa-shopping-cart"></i></a>
           <span id="logout">LOG OUT</span>
       </div>
   </div>

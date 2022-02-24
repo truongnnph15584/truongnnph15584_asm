@@ -8,6 +8,7 @@ import product_detail from "./pages/product_detail";
 import home from "./pages/home";
 import Cart from "./pages/cart";
 import Checkout from "./pages/checkout";
+import My_order from "./pages/my_order";
 import dashboard from "./pages/admin/dashboard";
 import AdminProducts from "./pages/admin/products";
 import EditProducts from "./pages/admin/products/edit";
@@ -62,6 +63,9 @@ router.on({
   "/products/:id":({data}) => {
     const {id} = data;
     print(product_detail,id)
+  },
+  "/my_order":() => {
+    print(My_order)
   },
   "/admin/dashboard":() => {
     print(dashboard)
