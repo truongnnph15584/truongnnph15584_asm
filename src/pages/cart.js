@@ -99,6 +99,9 @@ const Cart = {
     const prev_bt = document.querySelectorAll(".prev")
     const subtotal = document.getElementById("subtotal")
     var sum = 0;
+
+   
+
     for (var i = 0; i <= total.length - 1; i++) {
       total[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(Number(prices[i].innerHTML) * Number(quantity[i].value));
       prices[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(parseInt(prices[i].innerHTML));
@@ -108,6 +111,8 @@ const Cart = {
      sum = sum + Number(convert_total[i])
     }
     subtotal.innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum);
+  
+  
     delete_item.forEach(btn => {
       const id = btn.dataset.id;
       btn.addEventListener('click', function () {

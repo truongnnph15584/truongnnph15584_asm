@@ -54,6 +54,9 @@ router.on({
   "/cart":() => {
     print(Cart)
   },
+  "/checkout":() => {
+    print(Cart)
+  },
   "/products/:id":({data}) => {
     const {id} = data;
     print(product_detail,id)
