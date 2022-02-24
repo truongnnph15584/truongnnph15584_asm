@@ -1,6 +1,6 @@
 // import axios from "axios";
 import Nav_Admin from "../../../components/nav_admin";
-import { getall_orders } from "../../../api/order";
+import { getall_orders, get_order,update_order } from "../../../api/order";
 const Adminorders = {
     async render() {
         const orders = await getall_orders();
@@ -42,6 +42,7 @@ const Adminorders = {
     },
     afterRender() {
         const status = document.getElementsByClassName("status")
+        const btns = document.querySelectorAll('.action');
         for (var i = 0; i <= status.length - 1; i++) {
             if (status[i].innerHTML == 0) {
                 status[i].innerHTML = "Wait Confirm"
@@ -49,18 +50,20 @@ const Adminorders = {
             }
             if (status[i].innerHTML == 1) {
                 status[i].innerHTML = "Delivery"
-                status[i].style.color = 'blu';
+                status[i].style.color = 'blue';
             }
-            else{
+            if(status[i].innerHTML == 2) {
                 status[i].innerHTML = "Complete"
                 status[i].style.color = 'green';
+                btns[i].style.display = 'none';
             }
         }
-        const btns = document.querySelectorAll('.action');
         btns.forEach(btn => {
             const id = btn.dataset.id;
-            btn.addEventListener('click', async function(){
-             
+            btn.addEventListener('click', async function () {
+                var {data} = await get_order(id);
+                data.status = 1
+                update_order(data)
             })
         });
 

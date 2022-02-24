@@ -8,8 +8,17 @@ export const getall_orders = () =>{
     const url = "/orders";
     return instance.get(url);
 }
-
-export const getall_orders = () =>{
-    const url = "/orders";
+export const get_order = (id) => {
+    const url = `/orders/${id}`;
     return instance.get(url);
 }
+
+export const update_order = (order) => {
+    const url = `/orders/${order.id}`;
+    return instance.put(url, order);
+}
+
+// export const update_status_orders = (new_status) =>{
+//     const url = "/orders";
+//     return instance.get(url);
+// }
