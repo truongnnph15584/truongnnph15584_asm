@@ -74,7 +74,7 @@ const Cart = {
    <div class="border-t border-gray-200 absolute right-60 w-4/6 py-6 px-4 sm:px-6 ">
             <div class="flex justify-between text-base font-medium text-gray-900">
               <p>Subtotal</p>
-              <p>$262.00</p>
+              <p id="subtotal" >0</p>
             </div>
             <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
             <div class="mt-6">
@@ -94,14 +94,20 @@ const Cart = {
     const quantity = document.getElementsByClassName("quantity")
     const total = document.getElementsByClassName("total")
     const delete_item = document.querySelectorAll(".delete")
-
+    var convert_total = [];
     const plus_bt = document.querySelectorAll(".plus")
     const prev_bt = document.querySelectorAll(".prev")
-
+    const subtotal = document.getElementById("subtotal")
+    var sum = 0;
     for (var i = 0; i <= total.length - 1; i++) {
       total[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(Number(prices[i].innerHTML) * Number(quantity[i].value));
       prices[i].innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(parseInt(prices[i].innerHTML));
+      convert_total[i] = total[i].innerHTML.replace("&nbsp;₫", "");
+      convert_total[i] = convert_total[i].replace(".","");
+       
+     sum = sum + Number(convert_total[i])
     }
+    subtotal.innerHTML = Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(sum);
     delete_item.forEach(btn => {
       const id = btn.dataset.id;
       btn.addEventListener('click', function () {
