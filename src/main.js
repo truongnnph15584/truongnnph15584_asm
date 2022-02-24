@@ -16,6 +16,7 @@ import { reRender } from "./utils/rerender";
 import AdminCategories from "./pages/admin/categories";
 import AddCategory from "./pages/admin/categories/add";
 import EditCategory from "./pages/admin/categories/edit";
+
 const router = new Navigo("/", { linksSelector: "a" });
 const print = async (content, id) => {
   document.getElementById("header").innerHTML =  Header.render();
@@ -84,6 +85,9 @@ router.on({
 "/admin/categories/:id/edit":({data}) => {
   const {id} = data;
  print(EditCategory,id)
+},
+"/admin/orders":() => {
+  print(AdminCategories)
 },
 });
 

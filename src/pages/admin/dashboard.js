@@ -10,7 +10,7 @@ const dashboard = {
            <!--Container-->
            <div class="container w-full mx-auto pt-20">
            ${Nav_Admin.render()}
-                             <h1 class="py-12 text-4xl font-bold text-primary-400">New users</h1>
+                             <h1 class="py-12 mt-20 text-4xl font-bold text-primary-400">New users</h1>
                                    <table class="table-auto w-full">
                                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
                                            <tr class ="bg-primary h-12 text-white">
