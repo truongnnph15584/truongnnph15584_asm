@@ -1,48 +1,69 @@
 // import axios from "axios";
 import Nav_Admin from "../../../components/nav_admin";
 import { getall_orders } from "../../../api/order";
-const orders = {
+const Adminorders = {
     async render() {
+        const orders = await getall_orders();
 
         return /* html */`
            <!--Container-->
-                     <div class="container w-full mx-auto pt-20">
-                     ${Nav_Admin.render()}
-                             <h1 class="py-12 text-4xl font-bold text-primary-400">Categories</h1>
-                                   <table class="table-auto w-full">
-                                       <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
-                                           <tr class ="bg-primary h-12 text-white">
-                                               <th class="p-2 whitespace-nowrap">
-                                                   <div class="font-semibold text-left">Category Name</div>
-                                               </th>
-                                               <th class="p-2 whitespace-nowrap">Edit</div>
-                                               <th class="p-2 whitespace-nowrap">Delete</div>
-                                           </tr>
-                                       </thead>
-                                       <tbody class="text-sm divide-y divide-gray-100">
-                                       ${categories.data.map((item) => /* html */`
-                                       <tr id ="row_${item.id}">
-                                       <td class="p-2 whitespace-nowrap">
-                                           <div class="flex items-center">
-                                               <div class="w-10 h-10 flex-shrink-0 mr-5 sm:mr-3">
-                                               <div class="font-medium text-gray-800">${item.cate_name}</div>
-                                           </div>
-                                       </td>
-                               <td class="p-2 whitespace-nowrap">
-                               <a href="/admin/categories/${item.id}/edit"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-500 rounded">Edit</button></a>
-                           </td>
-                           <td class="p-2 whitespace-nowrap">
-                           <button data-id="${item.id}" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 border border-red-500 rounded delete_btn ">Delete</button></td>
-                                   </tr>`
+           <div class="container w-full mx-auto pt-20">
+           ${Nav_Admin.render()}
+                   <h1 class="py-12 text-4xl font-bold text-primary-400">Orders</h1>
+                         <table class="table-auto w-full">
+                             <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                                 <tr class ="bg-primary h-12 text-white">
+                                     <th class="p-2 whitespace-nowrap">
+                                         <div class="font-semibold text-left">Order By</div>
+                                     </th>
+                                     <th class="p-2 whitespace-nowrap">Status</div>
+                                     <th class="p-2 whitespace-nowrap">Action</div>
+                                 </tr>
+                             </thead>
+                             <tbody class="text-sm divide-y divide-gray-100">
+                             ${orders.data.map((item) => /* html */`
+                             <tr id ="row_${item.id}">
+                             <td class="p-2 whitespace-nowrap">
+                                 <div class="flex items-center">
+                                     <div class="w-10 h-10 flex-shrink-0 mr-5 sm:mr-3">
+                                     <div class="font-medium text-gray-800">${item.username}</div>
+                                 </div>
+                             </td>
+                     <td class="status p-2 whitespace-nowrap">
+                     ${item.status}
+                    </td>
+                 <td class="p-2 whitespace-nowrap">
+            <button data-id="${item.id}" class=" action bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-500 rounded">Confirm</button>                         </tr>`
         ).join("")}
-                                       </tbody>
-                                   </table>
-               </div>
-         
+                             </tbody>
+                         </table>
+     </div>
        `;
     },
-    afterRender(){
+    afterRender() {
+        const status = document.getElementsByClassName("status")
+        for (var i = 0; i <= status.length - 1; i++) {
+            if (status[i].innerHTML == 0) {
+                status[i].innerHTML = "Wait Confirm"
+                status[i].style.color = 'red';
+            }
+            if (status[i].innerHTML == 1) {
+                status[i].innerHTML = "Delivery"
+                status[i].style.color = 'blu';
+            }
+            else{
+                status[i].innerHTML = "Complete"
+                status[i].style.color = 'green';
+            }
+        }
+        const btns = document.querySelectorAll('.action');
+        btns.forEach(btn => {
+            const id = btn.dataset.id;
+            btn.addEventListener('click', async function(){
+             
+            })
+        });
 
     }
 }
-export default orders;
+export default Adminorders;
