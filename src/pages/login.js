@@ -186,7 +186,6 @@ footer #dk {
                     password: $("#input_pass").value
                 })
                 localStorage.setItem('user', JSON.stringify(data.user))
-                localStorage.setItem('cart',JSON.stringify(''))
                 window.location.href = "/"
             }
             catch (error) {
